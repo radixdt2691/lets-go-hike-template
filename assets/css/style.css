@@ -1,0 +1,462 @@
+/* Reset Css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset CSS End */
+
+/* Body CSS Start */
+body{
+    color: var(--primary);
+    font-family: 'Montserrat-Bold',sans-serif;
+}
+/* Body CSS End */
+
+/* Link css */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Link css end */
+
+/* Font-Face Start */
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+/* Font-Face End */
+
+/* Overflow */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Columns */
+.col-1 {
+    width: 8.33333333%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.6%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+/* Columns End */
+
+/* Font-size Start */
+.font-104{
+    font-size: 104px;
+}
+.font-100{
+    font-size: 100px;
+}
+.font-85{
+    font-size: 85px;
+}
+.font-83{
+    font-size: 83px;
+}
+.font-56{
+    font-size: 56px;
+}
+.font-47{
+    font-size: 47px;
+}
+.font-43{
+    font-size: 43px;
+}
+.font-42{
+    font-size: 42px;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-37{
+    font-size: 37px;
+}
+.font-34{
+    font-size: 34px;
+}
+.font-33{
+    font-size: 33px;
+}
+.font-32{
+    font-size: 32px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-22{
+    font-size: 22px;
+}
+
+/* Font-size End */
+
+/* Font-weight */
+.fw-600{
+    font-weight: 600;
+}
+
+/* Root Css Start*/
+:root{
+    --primary:#ffefd5;
+    --secondary: #b75a74;
+    --footer-bg:#29141a;
+    --txt-white:#ffffff;
+}
+/* Root Css End */
+
+/* Colors */
+.txt-primary{
+    color: var(--primary);
+}
+.txt-secondary{
+    color: var(--secondary);
+}
+.bg-primary{
+    background: var(--primary);
+}
+.bg-secondary{
+    background: var(--secondary);
+}
+.footer-bg{
+    background: var(--footer-bg);
+}
+.txt-white{
+    color: var(--txt-white);
+}
+/* Colors End */
+
+/* Display */
+.d-inline-block {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+/* Display End */
+
+/* Position */
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+/* Position End */
+
+/* list-style none */
+
+.list-style-none {
+    list-style: none;
+}
+
+/* img */
+img:not(.logo img) {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* text-center */
+.text-center {
+    text-align: center;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.txt-uppercase{
+    text-transform: uppercase;
+}
+
+/* Padding Start */
+.pt-241{
+    padding-top: 241px;
+}
+.pt-171{
+    padding-top: 171px;
+}
+.pt-129{
+    padding-top: 129px;
+}
+.pt-126{
+    padding-top: 126px;
+}
+.pt-90{
+    padding-top: 90px;
+}
+.pt-68{
+    padding-top: 68px;
+}
+.pb-183{
+    padding-bottom: 183px;
+}
+.pb-168{
+    padding-bottom: 168px;
+}
+.pb-277{
+    padding-bottom: 277px;
+}
+.pb-250{
+    padding-bottom: 250px;
+}
+.pb-97{
+    padding-bottom: 97px;
+}
+.pb-84{
+    padding-bottom: 84px;
+}
+.pb-77{
+    padding-bottom: 77px;
+}
+.pb-72{
+    padding-bottom: 72px;
+}
+.pl-89{
+    padding-left: 89px;
+}
+/* Padding End */
+
+/* Margin start */
+.mx-auto{
+    margin: 0 auto;
+}
+/* Margin start */
+/* Font-family */
+.ff-montserrat-regular{
+    font-family: 'Montserrat-Regular',sans-serif;
+}
+
+/* Gap */
+.gap-180{
+    gap: 180px;
+}
+.gap-170{
+    gap: 170px;
+}
+.gap-116{
+    gap: 116px;
+}
+.gap-65{
+    gap: 65px;
+}
+.gap-26{
+    gap: 26px;
+}
+/* Main Css start */
+
+/* Header Section */
+.hero-section{
+    background: url(../images/hero.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary{
+    background: var(--primary);
+    border-radius: 43px;
+    padding: 33px 98px 30px 100px;
+    border: 5px solid var(--primary);
+
+}
+.btn-primary:hover{
+    background: var(--secondary);
+    color: var(--primary);
+    border: 5px solid var(--primary);
+    cursor: pointer;
+}
+#check1 {
+    display: none;
+}
+.checkbtn1 {
+    display: none;
+}
+/* Header Section End */
+
+/* Our Team Section Start */
+.our-team{
+    background: var(--primary);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team .team-portfolio .team-wrapper img,.time-to-hike .img-txt-wrapper img,.tour-guide .img-txt-wrapper img{
+    border-radius: 50%;
+}
+/* Our Team Section End */
+
+/* Time to hike Start */
+.time-to-hike{
+    background: var(--secondary);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Time to hike End */
+
+/* Statisitcs start */
+.statistics{
+    background: var(--primary);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.count-1{
+    border: 6px solid var(--secondary);
+    border-radius: 50%;
+    width: 366px;
+    height: 367px;
+}
+/* Statisitcs end */
+
+/* Tour-Guide Start */
+.tour-guide{
+    background: var(--secondary);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Tour-Guide End */
