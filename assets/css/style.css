@@ -197,6 +197,7 @@ a {
     --secondary: #b75a74;
     --footer-bg:#29141a;
     --txt-white:#ffffff;
+    --txt-gray: #000000;
 }
 /* Root Css End */
 
@@ -218,6 +219,9 @@ a {
 }
 .txt-white{
     color: var(--txt-white);
+}
+.txt-gray{
+    color: var(--txt-gray);
 }
 /* Colors End */
 
@@ -284,7 +288,7 @@ a {
 }
 
 /* img */
-img:not(.logo img) {
+img:not(.logo img,.shape-hide img) {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
@@ -304,6 +308,15 @@ img:not(.logo img) {
 }
 
 /* Padding Start */
+.pt-431{
+    padding-top: 431px;
+}
+.pt-331{
+    padding-top: 331px;
+}
+.pt-284{
+    padding-top: 284px;
+}
 .pt-241{
     padding-top: 241px;
 }
@@ -316,23 +329,36 @@ img:not(.logo img) {
 .pt-126{
     padding-top: 126px;
 }
+.pt-111{
+    padding-top: 111px;
+}
 .pt-90{
     padding-top: 90px;
 }
 .pt-68{
     padding-top: 68px;
 }
-.pb-183{
-    padding-bottom: 183px;
+
+.pb-400{
+    padding-bottom: 400px;
 }
-.pb-168{
-    padding-bottom: 168px;
-}
-.pb-277{
-    padding-bottom: 277px;
+.pb-351{
+    padding-bottom: 351px;
 }
 .pb-250{
     padding-bottom: 250px;
+}
+.pb-239{
+    padding-bottom: 239px;
+}
+.pb-217{
+    padding-bottom: 217px;
+}
+.pb-183{
+    padding-bottom: 183px;
+}
+.pb-153{
+    padding-bottom: 153px;
 }
 .pb-97{
     padding-bottom: 97px;
@@ -340,14 +366,34 @@ img:not(.logo img) {
 .pb-84{
     padding-bottom: 84px;
 }
+.pb-82{
+    padding-bottom: 82px;
+}
 .pb-77{
     padding-bottom: 77px;
 }
 .pb-72{
     padding-bottom: 72px;
 }
+.pb-30{
+    padding-bottom: 30px;
+}
+
+.pl-250{
+    padding-left: 250px;
+}
 .pl-89{
     padding-left: 89px;
+}
+.pl-39{
+    padding-left: 39px;
+}
+.pr-90{
+    padding-right: 90px;
+}
+.px-30{
+    padding-top: 23px;
+    padding-bottom: 22px;
 }
 /* Padding End */
 
@@ -355,7 +401,8 @@ img:not(.logo img) {
 .mx-auto{
     margin: 0 auto;
 }
-/* Margin start */
+/* Margin end */
+
 /* Font-family */
 .ff-montserrat-regular{
     font-family: 'Montserrat-Regular',sans-serif;
@@ -368,25 +415,35 @@ img:not(.logo img) {
 .gap-170{
     gap: 170px;
 }
+.gap-126{
+    gap: 126px;
+}
 .gap-116{
     gap: 116px;
 }
 .gap-65{
     gap: 65px;
 }
+.gap-50{
+    gap: 50px;
+}
 .gap-26{
     gap: 26px;
 }
+
+.z-1{
+    z-index: 1;
+}
+
 /* Main Css start */
 
 /* Header Section */
 .hero-section{
     background: url(../images/hero.svg);
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 header nav ul li a:hover {
     text-decoration: underline;
 }
@@ -394,7 +451,7 @@ header nav ul li a:hover {
 .btn-primary{
     background: var(--primary);
     border-radius: 43px;
-    padding: 33px 98px 30px 100px;
+    padding: 22px 87px;
     border: 5px solid var(--primary);
 
 }
@@ -415,31 +472,118 @@ header nav ul li a:hover {
 /* Our Team Section Start */
 .our-team{
     background: var(--primary);
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.our-team .team-portfolio .team-wrapper img,.time-to-hike .img-txt-wrapper img,.tour-guide .img-txt-wrapper img{
+.our-team .team-portfolio .team-wrapper-1 img,.our-team .team-portfolio .team-wrapper-2 img,.our-team .team-portfolio .team-wrapper-3 img,.time-to-hike .img-txt-wrapper img,.tour-guide .img-txt-wrapper img{
     border-radius: 50%;
+}
+.our-team::before{
+    content: '';
+    width: 197px;
+    height: 261px;
+    background: url(../images/t-shape-5.svg);
+    position: absolute;
+    top: -35px;
+    left: 147px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our-team::after{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/t-shape-2.svg);
+    position: absolute;
+    top: 82px;
+    right: 106px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.team-wrapper-1::before{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/t-shape-1.svg);
+    position: absolute;
+    bottom: 198px;
+    left: -20px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.shape-hide{
+	width: 1716px;
+    height: 1430px;
+    bottom: -80%;
+    left: -59%;   
+}
+.shape-hide-1{
+	width: 1340px;
+    height: 1144px;
+    bottom: -70%;
+    right: -41%;  
+}
+.shape-hide-2{
+    width: 175px;
+    height: 169px;
+    bottom: 275px;
+    right: -20px;
+}
+.svg-icons{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 /* Our Team Section End */
 
 /* Time to hike Start */
 .time-to-hike{
     background: var(--secondary);
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.time-to-hike::before{
+    content: '';
+    width: 212px;
+    height: 178px;
+    background: url(../images/t-shape-4.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -60px;
+    background-repeat: no-repeat;
+
+}
+.time-to-hike::after{
+    content: '';
+    width: 131px;
+    height: 152px;  
+    background: url(../images/h-shape-1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 77px;
+    left: 93px;
+}
+
+.time-to-hike .text-wrapper::before{
+    content: '';
+    width: 197px;
+    height: 261px;
+    background: url(../images/t-shape-5.svg);
+    position: absolute;
+    top: -35px;
+    right: 147px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /* Time to hike End */
 
 /* Statisitcs start */
 .statistics{
     background: var(--primary);
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -449,14 +593,227 @@ header nav ul li a:hover {
     width: 366px;
     height: 367px;
 }
+.statistics::before{
+    content: '';
+    width: 175px;
+    height: 169px;
+    background: url(../images/t-shape-3.svg);
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, 0);
+    top: -78px;
+    background-repeat: no-repeat;
+}
+.statistics::after{
+    content: '';
+    width: 212px;
+    height: 188px;
+    background: url(../images/s-shape-1.svg);
+    position: absolute;
+    left: 99px;
+    top: 110px;
+    background-repeat: no-repeat;
+}
+.chef-counts::before{
+    content: '';
+    width: 133px;
+    height: 152px;
+    background: url(../images/s-shape-2.svg);
+    position: absolute;
+    right: 82px;
+    top: 280px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.shape-hide-3{
+    width: 1458px;
+    height: 1507px;
+    top: -86%;
+    left: -53%;
+
+}
+.shape-hide-4{
+    width: 1290px;
+    height: 1076px;
+    bottom: -52%;
+    right: -43%;
+}
 /* Statisitcs end */
 
 /* Tour-Guide Start */
 .tour-guide{
     background: var(--secondary);
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.tour-guide::before{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/s-shape-4.svg);
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, 0);
+    top: -78px;
+    background-repeat: no-repeat;
+}
+.tour-guide::after{
+    content: '';
+    width: 280px;
+    height: 253px;
+    background: url(../images/s-shape-3.svg);
+    position: absolute;
+    left: 74%;
+    transform: translate(-50%, 0);
+    top: -50px;
+    background-repeat: no-repeat;
+}
+.shape-hide-5{
+    width: 133px;
+    height: 152px;
+    top: 528px;
+    left: -25px;
+}
+.shape-hide-6{
+    width: 175px;
+    height: 169px;
+    top: 589px;
+    right: -40px;
+}
 /* Tour-Guide End */
+
+/* Go-with-us Start */
+.go-with-us{
+    background: url(../images/go-with-us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.go-with-us::before{
+    content: '';
+    width: 212px;
+    height: 188px;
+    background: url(../images/s-shape-1.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -105px;
+    background-repeat: no-repeat;
+}
+.shape-hide-7{
+    width: 175px;
+    height: 169px;
+    top: 150px;
+    left: -20px;
+}
+.shape-hide-8{
+    width: 280px;
+    height: 253px;
+    top: 513px;
+    right: -45px;
+}
+/* Go-with-us End */
+
+/* subscribe start */
+.subscribe{
+    background: var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-secondary{
+    background: var(--secondary);
+    border-radius: 43px;
+    padding: 27px 48px;
+    margin-left: -50px;
+}
+.btn-secondary:hover{
+    cursor: pointer;
+}
+.btn-grp input{
+    border-radius: 43px;
+    border: 0;
+}
+.btn-grp input::placeholder{
+    color: var(--txt-gray);
+    opacity: 0.502;
+}
+.subscribe::before{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/s-shape-4.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -50px;
+    background-repeat: no-repeat;
+}
+.subscribe::after{
+    content: '';
+    width: 197px;
+    height: 261px;
+    background: url(../images/t-shape-5.svg);
+    position: absolute;
+    left: 83px;
+    top: 367px;
+    background-repeat: no-repeat;
+
+}
+.shape-hide-9{
+    width: 1290px;
+    height: 1076px;
+    top: 430px;
+    left: -841px;
+}
+.shape-hide-10{
+    width: 1079px;
+    height: 971px;
+    bottom: 580px;
+    right: -650px;
+}
+.shape-hide-11{
+    width: 132px;
+    height: 152px;
+    top: 605px;
+    right: 109px;
+}
+/* subscribe end */
+
+/* Footer Start */
+.footer{
+    background: var(--footer-bg);
+}
+.link-social{
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.link-social:hover {
+    transform: rotateY(360deg);
+    transition:1.5s;
+}
+
+.fa-brands{
+    color: #29141A;
+    font-size: 30px;
+}
+
+.footer-links p a:hover{
+    text-decoration: underline;
+}
+.whitespace-nowrap{
+    white-space: nowrap;
+}
+.footer::before{
+    content: '';
+    width: 280px;
+    height: 253px;
+    background: url(../images/s-shape-3.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -90px;
+    background-repeat: no-repeat;
+}
+/* Footer End */
