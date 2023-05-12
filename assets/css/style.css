@@ -52,6 +52,16 @@ table {
 
 /* Reset CSS End */
 
+/* Root Css Start*/
+:root{
+    --primary:#ffefd5;
+    --secondary: #b75a74;
+    --footer-bg:#29141a;
+    --txt-white:#ffffff;
+    --txt-gray: #000000;
+}
+/* Root Css End */
+
 /* Body CSS Start */
 body{
     color: var(--primary);
@@ -139,10 +149,10 @@ a {
 
 /* Font-size Start */
 .font-104{
-    font-size: 104px;
+    font-size: calc( 20px + (104 - 20) * ((100vw - 320px) / (1920 - 320)));;
 }
 .font-100{
-    font-size: 100px;
+    font-size: calc(20px + (100 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 .font-85{
     font-size: 85px;
@@ -190,16 +200,6 @@ a {
 .fw-600{
     font-weight: 600;
 }
-
-/* Root Css Start*/
-:root{
-    --primary:#ffefd5;
-    --secondary: #b75a74;
-    --footer-bg:#29141a;
-    --txt-white:#ffffff;
-    --txt-gray: #000000;
-}
-/* Root Css End */
 
 /* Colors */
 .txt-primary{
@@ -338,7 +338,6 @@ img:not(.logo img,.shape-hide img) {
 .pt-68{
     padding-top: 68px;
 }
-
 .pb-400{
     padding-bottom: 400px;
 }
@@ -407,7 +406,6 @@ img:not(.logo img,.shape-hide img) {
 .ff-montserrat-regular{
     font-family: 'Montserrat-Regular',sans-serif;
 }
-
 /* Gap */
 .gap-180{
     gap: 180px;
@@ -507,7 +505,7 @@ header nav ul li a:hover {
     height: 196px;
     background: url(../images/t-shape-1.svg);
     position: absolute;
-    bottom: 198px;
+    bottom: 95px;
     left: -20px;
     background-repeat: no-repeat;
     z-index: 1;
@@ -621,7 +619,7 @@ header nav ul li a:hover {
     background: url(../images/s-shape-2.svg);
     position: absolute;
     right: 82px;
-    top: 280px;
+    top: 0;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -817,3 +815,487 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
 }
 /* Footer End */
+
+/* Responsive Css start */
+
+@media screen and (max-width: 1200px) {
+        .col-lg-12{
+            width: 100%;
+        }
+        .col-lg-10{
+            width: 83.33%;
+        }
+        .col-lg-11{
+            width: 91.66%;
+        }
+        .col-lg-3{
+            width: 25%;
+        }
+        .flex-lg{
+            display: flex;
+        }
+        .flex-lg-col{
+            flex-direction: column;
+        }
+        .flex-lg-col-rev{
+            flex-direction: column-reverse;
+        }
+        .justify-center-lg{
+            justify-content: center;
+        }
+        .align-center-lg{
+            align-items: center;
+        }
+        .gap-lg-50{
+            gap: 50px;
+        }
+        .hero-section{
+            background: var(--secondary);
+        }
+        .pl-89{
+            padding-left: 40px;
+        }
+        .text-center-lg{
+            text-align: center;
+        }
+        .shape-hide{
+            left: -99%;
+        }
+        .shape-hide-1{
+            right: -72%;
+        }
+        .team-wrapper-1::before{
+            z-index: -1;
+        }
+        .our-team::before{
+            left: 55px;
+        }
+        .our-team::after{
+            top: 35px;
+            right: 35px;
+        }
+        .flex-lg-wrap{
+            flex-wrap: wrap;
+        }
+        .pt-241 {
+            padding-top: 150px;
+        }
+        .gap-180 {
+            gap: 80px;
+        }
+        .time-to-hike .text-wrapper::before{
+            right: 50px;
+        }
+        .gap-170 {
+            gap: 70px;
+        }
+        .shape-hide-3{
+            top: -60%;
+            left: -85%;
+        }
+        .chef-counts::before{
+            right: 52px;
+            top: 50px;
+        }
+        .shape-hide-4{
+            bottom: -36%;
+            right: -67%;        
+        }
+        .pl-250 {
+            padding-left: 100px;
+        }
+        .shape-hide-9{
+            top: 635px;
+        }
+        .subscribe::after{
+            top: 567px;
+            left: 43px;
+        }
+        .shape-hide-10{
+            bottom: 680px;
+        }
+        .shape-hide-11{
+            top: 805px;
+            right: 35px;
+        }
+        .pt-331 {
+            padding-top: 150px;
+        }
+        .pb-400 {
+            padding-bottom: 200px;
+        }
+        .border-footer{
+            border-right: 3px solid var(--secondary);
+        }
+}
+
+@media screen and (max-width: 1024px) {
+    .fa-btn {
+        z-index: 99;
+        position: absolute;
+        right: 0;
+    }
+
+    .checkbtn1 {
+        display: block;
+        z-index: 99;
+        font-size: larger;
+    }
+
+    .topnav {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--secondary);
+        top: 0;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99;
+    }
+
+    .topnav, .topnav li a {
+        display: block;
+        margin: 0 auto;
+        color: var(--primary);
+        z-index: 9;
+        cursor: pointer;
+    }
+
+    .n1 {
+        margin-top: 100px;
+    }
+
+    .topnav li a {
+        padding: 20px;
+    }
+
+    .fa.fa-bars {
+        font-size: 31px;
+        padding: 18px;
+    }
+
+    .navbar .topnav, .topnav li a {
+        font-size: 20px;
+        color: var(--primary);
+    }
+
+    .navbar, .topnav li a {
+        border-bottom: 1px solid #faf5e4;
+        transition: .5s;
+    }
+
+    #check1:checked~.topnav {
+        right: 0;
+    }
+    .our-team::before,.our-team::after,.team-wrapper-1::before,.svg-icons>*,.time-to-hike::before,.time-to-hike::after,.time-to-hike .text-wrapper::before,.statistics::before,.statistics::after,.chef-counts::before,.tour-guide::before,.tour-guide::after,.go-with-us::before,.subscribe::before,.subscribe::after,.footer::before{
+        content: none;
+        display: none;
+    }   
+    .col-md-3{
+        width: 25%;
+    }
+    .pb-md-30{
+        padding-bottom: 30px;
+    }
+    .pt-68 {
+        padding-top: 38px;
+    }
+    .pb-239{
+        padding-bottom: 139px;
+    }
+    .font-40 {
+        font-size: 30px;
+    }
+    .btn-primary{
+        padding: 20px 50px;
+    }
+    .font-85 {
+        font-size: 65px;
+    }
+    .font-34 {
+        font-size: 28px;
+    }
+    .font-37 {
+        font-size: 32px;
+    }
+    .font-22 {
+        font-size: 18px;
+    }
+    .pt-171 {
+        padding-top: 85px;
+    }
+    .pt-126 {
+        padding-top: 100px;
+    }
+    .pb-153{
+        padding-bottom: 133px;
+    }
+    .pb-183 {
+        padding-bottom: 133px;
+    }
+    .font-83 {
+        font-size: 63px;
+    }
+    .font-33 {
+        font-size: 28px;
+    }
+    .font-56 {
+        font-size: 40px;
+    }
+    .pb-217 {
+        padding-bottom: 117px;
+    }
+    .pb-72 {
+        padding-bottom: 62px;
+    }
+    .pb-84 {
+        padding-bottom: 74px;
+    }
+    .pt-90 {
+        padding-top: 80px;
+    }
+    .pb-77 {
+        padding-bottom: 57px;
+    }
+    .pb-97 {
+        padding-bottom: 67px;
+    }
+    .pt-129 {
+        padding-top: 80px;
+    }
+    .gap-126 {
+        gap: 80px;
+    }
+    .pt-431 {
+        padding-top: 231px;
+    }
+    .pb-250 {
+        padding-bottom: 150px;
+    }
+    .pt-284 {
+        padding-top: 100px;
+    }
+    .pb-351 {
+        padding-bottom: 250px;
+    }
+    .font-43 {
+        font-size: 33px;
+    }
+    .font-47 {
+        font-size: 37px;
+    }
+    .pb-400{
+        padding-bottom: 100px;
+    }
+    .font-32 {
+        font-size: 22px;
+    }
+    .font-42 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-md-12{
+        width: 100%;
+    }
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-8{
+        width: 66.66%;
+    }
+    .mx-auto-md{
+        margin: 0 auto;
+    }
+    .text-center-md{
+        text-align: center;
+    }
+    .flex-md-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-md-col{
+        flex-direction: column;
+    }
+    .gap-md-30{
+        gap: 30px;
+    }
+    .align-center-md{
+        align-items: center;
+    }
+    .footer-border{
+        border-bottom: 3px solid var(--primary);
+    }
+    .font-40 {
+        font-size: 25px;
+    }
+    .font-85 {
+        font-size: 60px;
+    }
+    .font-34 {
+        font-size: 24px;
+    }
+    .font-83 {
+        font-size: 55px;
+    }
+    .font-33 {
+        font-size: 25px;
+    }
+    .count-1{
+        width: 266px;
+        height: 267px;
+    }
+    .font-56 {
+        font-size: 35px;
+    }
+    .font-43 {
+        font-size: 25px;
+    }
+    .font-47 {
+        font-size: 30px;
+    }
+    .font-42 {
+        font-size: 28px;
+    }
+    .font-32 {
+        font-size: 20px;
+    }
+    .pb-239 {
+        padding-bottom: 75px;
+    }
+    .pb-153 {
+        padding-bottom: 80px;
+    }
+    .gap-170 {
+        gap: 50px;
+    }
+    .pt-90 {
+        padding-top: 60px;
+    }
+    .pt-241 {
+        padding-top: 100px;
+    }
+    .pb-183 {
+        padding-bottom: 70px;
+    }
+    .pb-217 {
+        padding-bottom: 70px;
+    }
+    .pb-351 {
+        padding-bottom: 150px;
+    }
+    .pt-331 {
+        padding-top: 70px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .col-sm-6{
+        width: 50%;
+    }
+    .font-40 {
+        font-size: 20px;
+    }
+    .pb-72 {
+        padding-bottom: 40px;
+    }
+    .pb-84 {
+        padding-bottom: 40px;
+    }
+    .font-85 {
+        font-size: 50px;
+    }
+    .font-34 {
+        font-size: 18px;
+    }
+    .font-37 {
+        font-size: 28px;
+    }
+    .pt-126 {
+        padding-top: 70px;
+    }
+    .gap-180 {
+        gap: 70px;
+    }
+    .pb-77 {
+        padding-bottom: 30px;
+    }
+    .pb-97 {
+        padding-bottom: 30px;
+    }
+    .font-83 {
+        font-size: 46px;
+    }
+    .font-33 {
+        font-size: 20px;
+    }
+    .pt-129 {
+        padding-top: 50px;
+    }
+    .font-56 {
+        font-size: 30px;
+    }
+    .gap-126 {
+        gap: 50px;
+    }
+    .font-56 {
+        font-size: 24px;
+    }
+    .count-1{
+        width: 166px;
+        height: 167px;
+    }
+    .gap-26{
+        gap: 15px;
+    }
+    .font-43 {
+        font-size: 20px;
+    }
+    .font-47 {
+        font-size: 25px;
+    }
+    .pl-250 {
+        padding-left: 50px;
+    }
+    .pt-431 {
+        padding-top: 131px;
+    }
+    .pb-250{
+        padding-bottom: 100px;
+    }
+    .pl-89 {
+        padding-left: 20px;
+    }
+    .pt-284 {
+        padding-top: 60px;
+    }
+    .pt-68 {
+        padding-top: 30px;
+    }
+    .pt-111 {
+        padding-top: 30px;
+    }
+    .pb-351 {
+        padding-bottom: 70px;
+    }
+    .pb-400 {
+        padding-bottom: 60px;
+    }
+    .font-32 {
+        font-size: 18px;
+    }
+    .gap-50 {
+        gap: 30px;
+    }
+    .gap-lg-50 {
+        gap: 35px;
+    }
+    .font-42 {
+        font-size: 20px;
+    }
+    .font-32 {
+        font-size: 16px;
+    }
+    .link-social{
+        padding: 10px;
+    }
+}
