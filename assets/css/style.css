@@ -66,6 +66,10 @@ table {
 body{
     color: var(--primary);
     font-family: 'Montserrat-Bold',sans-serif;
+    position: relative
+}
+html, body {
+    overflow-x: hidden;
 }
 /* Body CSS End */
 
@@ -98,6 +102,13 @@ a {
 /* Overflow */
 .overflow-hidden {
     overflow: hidden;
+}
+
+/* Container */
+.container{
+    max-width: 1760px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Columns */
@@ -292,8 +303,9 @@ a {
 .shadow{
     filter: drop-shadow(0px 5px 5px rgba(25,45,51,0.15));
 }
+
 .img-fluid{
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
 }
  .top-68{
@@ -403,6 +415,9 @@ img:not(.logo img,.shape-hide img) {
 
 .pl-250{
     padding-left: 250px;
+}
+.pl-150{
+    padding-left: 150px;
 }
 .pl-89{
     padding-left: 89px;
@@ -846,6 +861,12 @@ header nav ul li a:hover {
 }
 /* Footer End */
 
+/* Fotawsome css */
+.fa-brands{
+    width: 30px;
+    height: 30px;
+}
+
 /* Responsive Css start */
 
 @media screen and (max-width: 1200px) {
@@ -934,6 +955,9 @@ header nav ul li a:hover {
         .pl-250 {
             padding-left: 100px;
         }
+        .pl-150{
+            padding-left: 50px;
+        }
         .shape-hide-9{
             top: 635px;
         }
@@ -957,12 +981,20 @@ header nav ul li a:hover {
         .border-footer{
             border-right: 3px solid var(--secondary);
         }
+        .go-with-us{
+            background-position: center;
+            opacity: 0.7;
+        }
+        .mx-lg-auto{
+            margin: 0 auto;
+        }
 }
 
 @media screen and (max-width: 1024px) {
     .fa-btn {
         z-index: 99;
         position: absolute;
+        top: 0;
         right: 0;
     }
 
@@ -1002,7 +1034,7 @@ header nav ul li a:hover {
         padding: 20px;
     }
 
-    .fa.fa-bars {
+    .fa.fa-bars,.fa.fa-xmark {
         font-size: 31px;
         padding: 18px;
     }
@@ -1016,7 +1048,9 @@ header nav ul li a:hover {
         border-bottom: 1px solid #faf5e4;
         transition: .5s;
     }
-
+    .img-fluid{
+        width: 60%;
+    }
     #check1:checked~.topnav {
         right: 0;
     }
@@ -1026,9 +1060,6 @@ header nav ul li a:hover {
     }   
     .col-md-3{
         width: 25%;
-    }
-    .pb-md-30{
-        padding-bottom: 30px;
     }
     .pt-68 {
         padding-top: 38px;
@@ -1125,6 +1156,9 @@ header nav ul li a:hover {
     }
     .font-42 {
         font-size: 30px;
+    }
+    .col-md-8{
+        width: 66.66%;
     }
 }
 @media screen and (max-width: 768px) {
