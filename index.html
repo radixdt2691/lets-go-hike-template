@@ -12,10 +12,10 @@
 </head>
 <body>
     <!-- Header Section Start -->
-    <header class="hero-section pt-68 pb-239">
+    <header class="header col-12 z-99 position-fixed top-68" id="navbar">
         <nav class="navbar flex align-center col-12 gap-116 pb-md-30" id="myTopnav">
             <input type="checkbox" id="check1">
-            <div class="logo col-1 pl-89">
+            <div class="logo pl-89">
                 <a href="#" title="Home">
                     <img src="./assets/images/logo.svg" alt="logo" width="137" height="95">
                 </a>
@@ -39,17 +39,22 @@
             </ul>
             <div class="fa-btn"><label for="check1" class="checkbtn1"><i class="fa fa-bars"></i></label></div>
         </nav>
+    </header>
+    <!-- Header Section Start -->
 
+    <!-- hero section start -->
+    <section class="-Z-1 hero-section pt-171 pb-239">  
         <div class="content-wrapper pl-89 pt-171 col-6 flex-lg flex-lg-col justify-center-lg align-center-lg col-lg-11">
             <h1 class="font-104 pb-72 txt-uppercase text-center-lg">Let’s Go Hike</h1>
             <p class="font-40 ff-montserrat-regular pb-84 text-center-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
             <button class="font-33 txt-secondary btn-primary">ORDER NOW</button>
         </div>
-    </header>
-    <!-- Header Section Start -->
+    </section>
+
+    <!-- hero section end -->
 
     <!-- Team Section Start -->
-    <section class="our-team pt-126 pb-153 position-relative">
+    <section class="-Z-1 our-team pt-126 pb-153 position-relative">
         <div class="col-6 mx-auto col-lg-11 ">
             <h2 class="txt-secondary font-85 text-center txt-uppercase text-center-lg">Our Team</h2>
             <p class="font-34 txt-secondary ff-montserrat-regular text-center pt-68">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
@@ -86,7 +91,7 @@
     <!-- Team Section End -->
 
     <!-- Time to Hike Start -->
-    <section class="time-to-hike pt-241 pb-183 position-relative">
+    <section class="-Z-1 time-to-hike pt-241 pb-183 position-relative">
         <div class="img-txt-wrapper flex justify-center align-center gap-180 flex-lg-wrap">
             <img src="./assets/images/hike-1.svg" alt="img" width="633" height="643" class="col-md-8">
             <div class="text-wrapper col-5 col-lg-11 flex-lg flex-lg-col justify-center-lg align-center-lg">
@@ -99,7 +104,7 @@
     <!-- Time to Hike End -->
 
     <!-- statistics section start -->
-    <section class="statistics pt-126 pb-217 position-relative">
+    <section class="-Z-1 statistics pt-126 pb-217 position-relative">
         <div class="col-6 mx-auto position-relative z-1 col-lg-11">
             <h2 class="txt-secondary font-83 text-center txt-uppercase text-center-lg">statistics</h2>
             <p class="font-33 txt-secondary ff-montserrat-regular text-center pt-68">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
@@ -130,7 +135,7 @@
     <!-- statistics section end -->
 
     <!-- Tour-Guide start -->
-    <section class="tour-guide pt-241 pb-183 position-relative">
+    <section class="-Z-1 tour-guide pt-241 pb-183 position-relative">
         <div class="img-txt-wrapper flex justify-center align-center gap-126 position-relative z-1 flex-lg-wrap flex-lg-col-rev">
             <div class="text-wrapper col-5 flex-lg flex-lg-col justify-center-lg align-center-lg col-lg-11">
                 <h2 class="font-100 txt-uppercase pb-77 text-center-lg">Tour Guide</h2>
@@ -151,7 +156,7 @@
     <!-- Tour-Guide end -->
 
     <!-- go-with-us start -->
-    <section class="go-with-us pt-431 pl-250 pb-250 position-relative">
+    <section class="-Z-1 go-with-us pt-431 pl-250 pb-250 position-relative">
         <div class="col-6 col-lg-11 position-relative z-1">
             <p class="font-43 ff-montserrat-regular txt-white pb-82">If you are a culinary fan, if you like to spend time in your kitchen, you likely find yourself looking for reliable resources through which you can</p>
             <p class="font-47 txt-white">Phoebe Frazier</p>
@@ -168,7 +173,7 @@
     <!-- go-with-us end -->
 
     <!-- Subscribe start -->
-    <section class="subscribe pt-284 pb-351 position-relative">
+    <section class="-Z-1 subscribe pt-284 pb-351 position-relative">
         <div class="col-7 mx-auto position-relative z-1 col-lg-11">
             <h2 class="txt-secondary font-100 text-center txt-uppercase text-center-lg">subscribe</h2>
             <p class="font-33 txt-secondary ff-montserrat-regular text-center pt-68 text-center-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
@@ -235,5 +240,27 @@
         </div>
     </footer>
     <!-- Footer Start -->
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("navbar");
+        var nav = document.getElementById("myTopnav");
+        var logo = document.getElementsByClassName("logo");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky","top-0","shadow");
+            nav.classList.add("justify-start","p-10");
+            logo.classList.add("img-fluid");
+        } else {
+            header.classList.remove("sticky","top-0","shadow");
+            nav.classList.remove("justify-start ","p-10");
+            logo.classList.remove("img-fluid");
+        }
+        }
+    </script>
+
 </body>
 </html> 

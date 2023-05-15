@@ -282,6 +282,26 @@ a {
 .position-relative {
     position: relative;
 }
+.position-fixed{
+    position: fixed;
+}
+.sticky{
+    background: var(--secondary);
+    width: 100%;
+}
+.shadow{
+    filter: drop-shadow(0px 5px 5px rgba(25,45,51,0.15));
+}
+.img-fluid{
+    max-width: 80%;
+    height: auto;
+}
+ .top-68{
+    top: 68px;
+ }
+ .top-0{
+    top: 0;
+ }
 /* Position End */
 
 /* list-style none */
@@ -397,6 +417,9 @@ img:not(.logo img,.shape-hide img) {
     padding-top: 23px;
     padding-bottom: 22px;
 }
+.p-10{
+    padding: 10px;
+}
 /* Padding End */
 
 /* Margin start */
@@ -431,11 +454,15 @@ img:not(.logo img,.shape-hide img) {
 .gap-26{
     gap: 26px;
 }
-
+.z-99{
+    z-index: 99;
+}
 .z-1{
     z-index: 1;
 }
-
+.-z-1{
+    z-index: -1;
+}
 /* Main Css start */
 
 /* Header Section */
@@ -964,7 +991,9 @@ header nav ul li a:hover {
         z-index: 9;
         cursor: pointer;
     }
-
+    .top-68{
+        top: 0;
+    }
     .n1 {
         margin-top: 100px;
     }
