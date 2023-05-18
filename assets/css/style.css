@@ -950,7 +950,7 @@ header nav ul li a:hover {
             padding: 15px 50px;
         }
         .container{
-            padding: 0 25px;
+            padding: 0 15px;
         }
         .text-center-lg{
             text-align: center;
@@ -1132,7 +1132,7 @@ header nav ul li a:hover {
         width: 25%;
     }
     .btn-primary{
-        padding: 20px 50px;
+        padding: 15px 35px;;
     }
     .pt-240 {
         padding-top: 100px;
@@ -1191,8 +1191,8 @@ header nav ul li a:hover {
     .col-md-10{
         width: 83.33%;
     }
-    .col-md-8{
-        width: 66.66%;
+    .col-md-4{
+        width: 33.33%;
     }
     .mx-auto-md{
         margin: 0 auto;
@@ -1249,46 +1249,91 @@ header nav ul li a:hover {
     .btn-grp input {
         border-radius: 43px;
     }    
+    .go-with-us, .hero-section, .subscribe {
+        min-height: 40vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pt-111 {
+        padding-top: 40px;
+    }
+    .px-23 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .btn-secondary{
+        padding: 15px 30px;
+        margin-left: unset;
+    }
+    .font-33 {
+        font-size: 18px;
+    }
+    .footer{
+        height: unset;
+        padding: 30px 0;
+    }
+    .font-42 {
+        font-size: 22px;
+    }
+    .font-32 {
+        font-size: 18px;
+        line-height: unset;
+    }
+    .link-social{
+        padding: 10px;
+    }
 }
 @media screen and (max-width: 575px) {
+    .align-center-sm{
+        align-items: center;
+    }
+    .mx-auto-sm{
+        margin: 0 auto;
+    }
+    .text-center-sm{
+        text-align: center;
+    }
     .col-sm-6{
         width: 50%;
     }
     .font-40 {
-        font-size: 20px;
+        font-size: 15px;
     }
     .pb-72 {
-        padding-bottom: 40px;
+        padding-bottom: 15px;
     }
     .pb-84 {
-        padding-bottom: 40px;
+        padding-bottom: 15px;
     }
     .font-85 {
-        font-size: 50px;
+        font-size: 25px;
     }
     .font-34 {
-        font-size: 18px;
+        font-size: 15px;
     }
     .font-37 {
-        font-size: 28px;
+        font-size: 17px;
+    }
+    .font-22 {
+        font-size: 16px;
     }
     .pt-126 {
         padding-top: 70px;
     }
     .gap-180 {
-        gap: 70px;
+        gap: 30px;
     }
     .pb-77 {
-        padding-bottom: 30px;
+        padding-bottom: 15px;
     }
     .pb-97 {
-        padding-bottom: 30px;
+        padding-bottom: 15px;
     }
     .font-83 {
-        font-size: 46px;
+        font-size: 25px;
     }
     .font-33 {
-        font-size: 20px;
+        font-size: 15px;
     }
     .pt-129 {
         padding-top: 50px;
@@ -1297,7 +1342,7 @@ header nav ul li a:hover {
         font-size: 30px;
     }
     .gap-126 {
-        gap: 50px;
+        gap: 30px;
     }
     .font-56 {
         font-size: 24px;
@@ -1310,10 +1355,13 @@ header nav ul li a:hover {
         gap: 15px;
     }
     .font-43 {
-        font-size: 20px;
+        font-size: 16px;
     }
     .font-47 {
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .pb-82 {
+        padding-bottom: 40px;
     }
     .pl-250 {
         padding-left: 50px;
@@ -1331,6 +1379,9 @@ header nav ul li a:hover {
         padding-top: 60px;
     }
     .pt-68 {
+        padding-top: 15px;
+    }
+    .pt-90 {
         padding-top: 30px;
     }
     .pt-111 {
@@ -1357,7 +1408,34 @@ header nav ul li a:hover {
     .font-32 {
         font-size: 16px;
     }
-    .link-social{
-        padding: 10px;
+    .hero-section{
+        background: var(--secondary);
+    }
+    .font-104 {
+        font-size: 25px;
+    }
+    .container{
+        padding: 0;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+    .col-sm-11{
+        width: 91.66%;
+    }
+    .go-with-us, .hero-section, .subscribe {
+        min-height: 30vh;
+    }
+    section, footer {
+        padding: 30px 0;
+    }
+    .font-100 {
+        font-size: 25px;
+    }
+    .gap-170 {
+        gap: 30px;
+    }
+    .btn-primary {
+        padding: 10px 20px;
     }
 }
