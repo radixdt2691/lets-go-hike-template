@@ -771,7 +771,9 @@ header nav ul li a:hover {
 .footer{
     background: var(--footer-bg);
     height: 100vh;
-
+}
+.txt-capitalize{
+    text-transform: capitalize;
 }
 .link-social{
     display: inline-block;
@@ -1196,6 +1198,9 @@ header nav ul li a:hover {
     .pt-md-80 {
         padding-top: 80px;
     }
+    .pl-150{
+        padding-left: 30px;
+    }
     .px-23 {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -1225,6 +1230,15 @@ header nav ul li a:hover {
     }
     .col-sm-5{
         width: 41.6%;
+    }
+    .flex-sm-col{
+        flex-direction: column;
+    }
+    .gap-sm-25{
+        gap: 25px;
+    }
+    .btn-grp input{
+        border-radius: 43px;
     }
     .align-center-sm{
         align-items: center;
@@ -1337,5 +1351,8 @@ header nav ul li a:hover {
     }
     .btn-primary {
         padding: 10px 20px;
+    }
+    .btn-secondary{
+        margin-left: unset;
     }
 }
