@@ -405,6 +405,9 @@ img:not(.logo img) {
 .gap-26{
     gap: 26px;
 }
+.gap-22{
+    gap: 22px;
+}
 .z-99{
     z-index: 99;
 }
@@ -444,6 +447,10 @@ header nav ul li a:hover {
 }
 .checkbtn1 {
     display: none;
+}
+.fixed-border{
+    border-bottom: 1px solid #faf5e4;
+    transition: .5s;
 }
 /* Header Section End */
 
@@ -810,6 +817,7 @@ header nav ul li a:hover {
 
 /* Responsive Css start */
 
+
 @media screen and (max-width: 1200px) {
         .flex-lg{
             display: flex;
@@ -1010,7 +1018,6 @@ header nav ul li a:hover {
     .fa-btn {
         z-index: 99;
         position: absolute;
-        top: 0;
         right: 0;
     }
     .checkbtn1 {
@@ -1028,6 +1035,7 @@ header nav ul li a:hover {
         text-align: center;
         transition: all .5s;
         z-index: 99;
+        padding: 80px 0 ;
     }
     .topnav, .topnav li a {
         display: block;
@@ -1046,10 +1054,6 @@ header nav ul li a:hover {
     .navbar .topnav, .topnav li a {
         font-size: 20px;
         color: var(--primary);
-    }
-    .navbar, .topnav li a {
-        border-bottom: 1px solid #faf5e4;
-        transition: .5s;
     }
     .img-fluid{
         width: 60%;
@@ -1122,6 +1126,9 @@ header nav ul li a:hover {
     .col-md-4{
         width: 33.33%;
     }
+    .col-md-5{
+        width: 50%;
+    }
     .mx-auto-md{
         margin: 0 auto;
     }
@@ -1133,9 +1140,6 @@ header nav ul li a:hover {
     }
     .flex-md-col{
         flex-direction: column;
-    }
-    .gap-md-30{
-        gap: 30px;
     }
     .align-center-md{
         align-items: center;
@@ -1181,9 +1185,6 @@ header nav ul li a:hover {
         font-size: 18px;
         line-height: unset;
     }
-    .btn-grp input {
-        border-radius: 43px;
-    }    
     .go-with-us, .hero-section, .subscribe {
         min-height: 40vh;
         padding-top: 40px;
@@ -1201,7 +1202,6 @@ header nav ul li a:hover {
     }
     .btn-secondary{
         padding: 15px 30px;
-        margin-left: unset;
     }
 
     .footer{
@@ -1222,6 +1222,9 @@ header nav ul li a:hover {
     }
     .col-sm-6{
         width: 50%;
+    }
+    .col-sm-5{
+        width: 41.6%;
     }
     .align-center-sm{
         align-items: center;
@@ -1319,9 +1322,6 @@ header nav ul li a:hover {
     }    
     .hero-section{
         background: var(--secondary);
-    }
-    .container{
-        padding: 0;
     }
     .go-with-us, .hero-section, .subscribe {
         min-height: 30vh;
