@@ -292,10 +292,10 @@ section,footer{
     height: auto;
 }
  .top-68{
-    top: 68px;
+    padding-top: 68px;
  }
  .top-0{
-    top: 0;
+    padding-top: 0;
  }
 /* Position End */
 
@@ -830,16 +830,16 @@ img:not(.logo img) {
 }
 
 /* Responsive Css start */
-@media screen and (min-width: 1950px) {
+/* @media screen and (min-width: 1950px) {
     .shape-hide{
         height: 100%;
         width: 100%;
-    }
+    }   
     .shape-hide img{
         position: absolute;
         left: 25%;
     }
-}
+} */
 
 @media screen and (max-width: 1200px) {
         .flex-lg{
