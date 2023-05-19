@@ -891,7 +891,7 @@ img:not(.logo img) {
             max-width: 60%;
         }
         .top-68{
-            top: 0px;
+            padding-top: 0px;
         }
         .pt-90 {
             padding-top: 70px;
